@@ -1,6 +1,6 @@
 [build]
   command = "composer install"
-  publish = "."
+  publish = "."  # The root folder where index.php lives
 
 [context.production.environment]
-PHP_VERSION = "8.2"
+  PHP_VERSION = "8.2"
