@@ -1,0 +1,115 @@
+.calendar-container {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-month-year {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-weekday {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.calendar-day {
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f8f9fa;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.calendar-day.available {
+    background: #e8f5e9;
+    border-color: #c8e6c9;
+}
+
+.calendar-day.selected {
+    background: #198754;
+    color: white;
+}
+
+.calendar-day.other-month {
+    opacity: 0.5;
+    background: #f1f1f1;
+}
+
+.calendar-day.today {
+    border: 2px solid #198754;
+}
+
+.day-num {
+    font-weight: bold;
+}
+
+.day-availability {
+    font-size: 0.7em;
+    color: #198754;
+    margin-top: 2px;
+}
+
+.calendar-day.selected .day-availability {
+    color: white;
+}
+
+.calendar-nav {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.calendar-nav:hover {
+    background: #f1f1f1;
+}
+
+.popup-dates {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.popup-dates li {
+    padding: 3px 0;
+    border-bottom: 1px solid #eee;
+
+    .calendar-day.available {
+    background: #43c97e !important;
+    color: #fff !important;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.calendar-day.selected {
+    outline: 2px solid #14532d;
+}
+}

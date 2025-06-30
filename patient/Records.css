@@ -1,0 +1,42 @@
+
+        body {
+            background: #f8fafc;
+            font-family: 'Poppins', sans-serif;
+        }
+        .main-content {
+            padding: 32px 32px 32px 0;
+        }
+        .records-tabs {
+            margin-bottom: 24px;
+        }
+        .records-tab {
+            background: #fff;
+            color: #222;
+            border: none;
+            border-radius: 1.2rem;
+            padding: 7px 22px;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-right: 8px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .records-tab.active {
+            background: #43c97e;
+            color: #fff;
+        }
+        .record-item {
+            background: #fff;
+            border-radius: 1.5rem;
+            padding: 18px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            box-shadow: 0 4px 16px 0 rgba(67, 201, 126, 0.08);
+        }
+        .record-arrow {
+            color: #43c97e;
+            font-size: 1.5rem;
+        }
