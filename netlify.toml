@@ -1,6 +1,6 @@
 [build]
   command = "composer install"
-  publish = "public" # or "." if your index.php is in the root
+  publish = "."
 
 [context.production.environment]
   PHP_VERSION = "8.2"
